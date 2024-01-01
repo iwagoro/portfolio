@@ -31,7 +31,7 @@ export default function Home() {
         Gsap.fromTo(
             ref2.current,
             {
-                x: -200,
+                x: -300,
             },
             {
                 scrollTrigger: {
@@ -49,7 +49,7 @@ export default function Home() {
         Gsap.fromTo(
             ref3.current,
             {
-                x: 200,
+                x: 300,
             },
             {
                 scrollTrigger: {
@@ -59,6 +59,25 @@ export default function Home() {
                 },
                 opacity: 1,
                 x: 0,
+                duration: 1,
+                ease: "power2.inOut",
+            }
+        );
+
+        Gsap.fromTo(
+            ref4.current,
+            {
+                y: 500,
+                opacity: 0,
+            },
+            {
+                scrollTrigger: {
+                    toggleActions: "play none none reverse",
+                    trigger: ref4.current,
+                    start: `top center`,
+                },
+                opacity: 1,
+                y: 0,
                 duration: 1,
                 ease: "power2.inOut",
             }
@@ -89,13 +108,13 @@ export default function Home() {
                         もっと楽しく、
                         <br /> もっと面白く。
                     </h2>
-                    <h3 className="text-left w-full whitespace-nowrap">
+                    <h3 className="text-left w-full whitespace-nowrap ">
                         些細なことから <br />
                         日々の生活を少しあざやかに、
                         <br />
                         毎日を少しでも楽しくする。
                     </h3>
-                    <h4 className="text-left w-full ">More fun. More interesting. From the smallest details ,making everyday a little more bruising and a little more enjoyable. With these goals in mind, I create web apps and art.</h4>
+                    <h4 className="text-left w-full text-[gray] ">More fun. More interesting. From the smallest details ,making everyday a little more bruising and a little more enjoyable. With these goals in mind, I create web apps and art.</h4>
                 </div>
                 <div className=" h-[calc(100vh/2)]"></div>
                 <div ref={ref4} className="w-screen h-screen flex flex-col justify-center items-center gap-y-5">
