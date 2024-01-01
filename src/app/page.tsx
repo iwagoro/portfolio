@@ -68,15 +68,13 @@ export default function Home() {
             ref4.current,
             {
                 y: 500,
-                opacity: 0,
             },
             {
                 scrollTrigger: {
                     toggleActions: "play none none reverse",
                     trigger: ref4.current,
-                    start: `top center`,
+                    start: `top bottom`,
                 },
-                opacity: 1,
                 y: 0,
                 duration: 1,
                 ease: "power2.inOut",
@@ -117,9 +115,9 @@ export default function Home() {
                     <h4 className="text-left w-full text-[gray] ">More fun. More interesting. From the smallest details ,making everyday a little more bruising and a little more enjoyable. With these goals in mind, I create web apps and art.</h4>
                 </div>
                 <div className=" h-[calc(100vh/2)]"></div>
-                <div ref={ref4} className="w-screen h-screen flex flex-col justify-center items-center gap-y-5">
+                <div ref={ref4} className=" px-10 h-screen  flex flex-col justify-center items-center gap-y-5">
                     <h2 style={{ textAlign: "center", whiteSpace: "nowrap" }}>Works</h2>
-                    <div className="w-[80vw] max-w-7xl mx-10">
+                    <div className="w-[90%]  ">
                         <Works />
                     </div>
                 </div>
