@@ -1,11 +1,20 @@
-import Sketch from "react-p5";
 import { SimplexNoise } from "three/examples/jsm/Addons.js";
 import { convertSymbol, ConvertToConstant, ConvertLookableColor, generateRatio, generateScale } from "./AsciiUtil";
+import { useEffect } from "react";
+import dynamic from "next/dynamic";
 
 const Ascii = ({ flag }: { flag: number }) => {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    const simplexNoise = new SimplexNoise();
+    let width = 0;
+    let height = 0;
+    let simplexNoise: any = null;
+
+    useEffect(() => {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        simplexNoise = new SimplexNoise();
+    }, []);
+
+    const Sketch = dynamic(() => import("react-p5"), { ssr: false });
 
     const setup = (p5: any, canvasParentRef: any) => {
         p5.createCanvas(width, height).parent(canvasParentRef);
