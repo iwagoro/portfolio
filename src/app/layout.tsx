@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
+import Ascii from "../components/ascii/p5";
+import TopBar from "@/components/general/topBar";
 import "./globals.css";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
@@ -12,7 +14,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <TopBar />
+                <div className="w-screen h-screen fixed top-0 left-0 z-[-1]">
+                    <Ascii flag={0} />
+                </div>
+                {children}
+            </body>
         </html>
     );
 }

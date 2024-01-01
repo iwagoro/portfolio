@@ -29,14 +29,14 @@ h1 {
         font-size: 8rem;
     }
     @media (min-width: 768px) {
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     @media (min-width: 1024px) {
-        font-size: 13rem;
+        font-size: 10rem;
     }
     @media (min-width: 1280px) {
-        font-size: 17rem;
+        font-size: 12rem;
     }
 }
 

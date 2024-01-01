@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import styled from "styled-components";
-
+import Link from "next/link";
 import Drawer from "./drawer";
 
 const height = "100px";
@@ -11,7 +12,7 @@ const Container = styled.div`
     box-sizing: border-box;
 
     position: fixed;
-    top: 0;
+    top: 20;
     left: 0;
 
     z-index: 5;
@@ -25,7 +26,9 @@ export default function TopBar() {
     return (
         <Container>
             <div className="w-screen max-w-7xl flex items-center justify-between">
-                <p className="ml-10 text-xl  font-bold ">Rockwell</p>
+                <Link href="/">
+                    <p className="ml-10 text-xl  font-bold ">Rockwell</p>
+                </Link>
                 <div className="mr-10">
                     <Drawer />
                 </div>

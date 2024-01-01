@@ -1,3 +1,4 @@
+"use client";
 import { SimplexNoise } from "three/examples/jsm/Addons.js";
 import { convertSymbol, ConvertToConstant, ConvertLookableColor, generateRatio, generateScale } from "./AsciiUtil";
 import { useEffect } from "react";
