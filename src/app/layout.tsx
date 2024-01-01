@@ -16,9 +16,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body className={inter.className}>
                 <TopBar />
+
                 <div className="w-screen h-screen fixed top-0 left-0 z-[-1]">
                     <Ascii flag={0} />
                 </div>
+
                 {children}
             </body>
         </html>

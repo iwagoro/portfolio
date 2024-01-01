@@ -3,15 +3,8 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Drawer as Drawer2, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import styled from "styled-components";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
-
-const Img = styled.img`
-    width: 24px;
-    height: 24px;
-    aspect-ratio: 1/1;
-`;
 
 export default function Drawer() {
     return (
@@ -51,19 +44,19 @@ export default function Drawer() {
                                 </div>
                             </CarouselItem>
                             <CarouselItem>
-                                <div className="mx-5 flex flex-col justify-between items-start  gap-y-5 ">
-                                    <div className="flex gap-x-5 justify-center">
-                                        <Img src="./icons/logo-white.png"></Img>
+                                <div className="mx-5 flex flex-col justify-between  gap-y-5 ">
+                                    <a className="no-underline flex justify-start gap-x-5">
+                                        <img className="w-6 h-6" src="./icons/logo-white.png"></img>
                                         <p className="text-xl">X/Twitter</p>
-                                    </div>
-                                    <div className="flex gap-x-5 justify-center">
-                                        <Img src="./icons/Instagram_Glyph_White.png"></Img>
+                                    </a>
+                                    <a className="no-underline flex justify-start gap-x-5">
+                                        <img className="w-6 h-6" src="./icons/Instagram_Glyph_White.png"></img>
                                         <p className="text-xl">Instagram</p>
-                                    </div>
-                                    <div className="flex gap-x-5 justify-center">
-                                        <Img src="./icons/github-mark-white.png"></Img>
+                                    </a>
+                                    <a className="no-underline flex justify-start gap-x-5">
+                                        <img className="w-6 h-6" src="./icons/github-mark-white.png"></img>
                                         <p className="text-xl">Github</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </CarouselItem>
                         </CarouselContent>
@@ -83,17 +76,20 @@ export default function Drawer() {
 
 /* 
 
-                        <div className="flex gap-x-5 justify-center">
-                                            <Img src="./icons/logo-white.png"></Img>
-                                            <p className="text-xl">X/Twitter</p>
-                                        </div>
-                                        <div className="flex gap-x-5 justify-center">
-                                            <Img src="./icons/Instagram_Glyph_White.png"></Img>
-                                            <p className="text-xl">Instagram</p>
-                                        </div>
-                                        <div className="flex gap-x-5 justify-center">
-                                            <Img src="./icons/github-mark-white.png"></Img>
-                                            <p className="text-xl">Github</p>
-                                        </div>
-                            
+                       <CarouselItem>
+                                <div className="mx-5 flex flex-col justify-between items-start  gap-y-5 ">
+                                    <div className="w-6 h-6 flex gap-x-5 justify-center">
+                                        <img src="./icons/logo-white.png"></img>
+                                        <p className="text-xl">X/Twitter</p>
+                                    </div>
+                                    <div className="w-6 h-6 flex gap-x-5 justify-center">
+                                        <img src="./icons/Instagram_Glyph_White.png"></img>
+                                        <p className="text-xl">Instagram</p>
+                                    </div>
+                                    <div className="w-6 h-6 flex gap-x-5 justify-center">
+                                        <img src="./icons/github-mark-white.png"></img>
+                                        <p className="text-xl">Github</p>
+                                    </div>
+                                </div>
+                            </CarouselItem>
  */

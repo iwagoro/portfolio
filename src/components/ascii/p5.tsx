@@ -9,11 +9,11 @@ const Ascii = ({ flag }: { flag: number }) => {
     let height = 0;
     let simplexNoise: any = null;
 
-    useEffect(() => {
+    if (typeof window !== "undefined") {
         width = window.innerWidth;
         height = window.innerHeight;
         simplexNoise = new SimplexNoise();
-    }, []);
+    }
 
     const Sketch = dynamic(() => import("react-p5"), { ssr: false });
 

@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
         <div className="w-screen   flex  flex-col items-center justify-center overflow-hidden">
-            <main className="w-screen max-w-7xl flex flex-col items-center relative ">
+            <main className="w-screen max-w-7xl flex flex-col items-center relative z-10">
                 <Introduction />
             </main>
         </div>
