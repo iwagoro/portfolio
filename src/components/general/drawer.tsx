@@ -49,7 +49,7 @@ export default function Drawer() {
                                 </div>
                             </CarouselItem>
                             <CarouselItem>
-                                <div className="mx-5 flex flex-col justify-between  gap-y-5 ">
+                                <div className="mx-5 h-full flex flex-col justify-between items-center   ">
                                     <a className="no-underline flex justify-start gap-x-5">
                                         <img className="w-6 h-6" src="./icons/logo-white.png"></img>
                                         <p className="text-xl">X/Twitter</p>
