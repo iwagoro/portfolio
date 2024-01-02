@@ -103,7 +103,6 @@ export default function Introduction() {
                     <br />
                     毎日を少しでも楽しくする。
                 </h3>
-                <h4 className="text-left w-full text-[gray] ">More fun. More interesting. From the smallest details ,making everyday a little more bruising and a little more enjoyable. With these goals in mind, I create web apps and art.</h4>
             </div>
             <div className=" h-[calc(100vh/2)]"></div>
             <div ref={ref4} className="w-full h-screen  flex flex-col justify-center items-center gap-y-5 ">

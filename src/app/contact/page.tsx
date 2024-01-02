@@ -5,8 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Page() {
     return (
-        <div className="w-screen  min-h-screen flex flex-col items-center mt-[120px]">
-            <div className="w-[80%] sm:w-[90%] md:w-[80%] xl:w-[70%]  max-w-xl h-full flex flex-col items-center bg-[#0f131a] rounded-[20px] py-20 ">
+        <div className="w-screen  min-h-screen flex justify-center items-center ">
+            <div className="w-[80%]  max-w-xl h-full flex flex-col items-center bg-[#0f131a] rounded-[20px] py-20 ">
                 <h2>Contact</h2>
 
                 <div className="grid w-[80%] max-w-md items-center gap-1.5 mb-20 ">
