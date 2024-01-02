@@ -26,6 +26,11 @@ export default function Drawer() {
                         <CarouselContent>
                             <CarouselItem>
                                 <div className="mx-5 flex flex-col justify-between  gap-y-5 ">
+                                    <Link href="/">
+                                        <DrawerClose asChild>
+                                            <p className="text-2xl">Home</p>
+                                        </DrawerClose>
+                                    </Link>
                                     <Link href="/skills">
                                         <DrawerClose asChild>
                                             <p className="text-2xl">Skills</p>

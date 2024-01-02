@@ -1,12 +1,10 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
-import styled from "styled-components";
-
 export default function Page() {
     return (
-        <div className="w-screen  min-h-screen flex flex-col items-center ">
-            <div className="w-full max-w-7xl h-full flex flex-col items-center">
-                <h2 className="mt-20">My Skills</h2>
+        <div className="w-screen  min-h-screen flex flex-col items-center my-[120px]">
+            <div className="w-[70%] max-w-7xl h-full flex flex-col items-center">
+                <h2>My Skills</h2>
                 <h4 className="w-full max-7xl px-10  my-10  text-left">Language</h4>
                 <div className="w-full px-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6  gap-x-5 gap-y-10">
                     <div className="flex flex-col items-center">
