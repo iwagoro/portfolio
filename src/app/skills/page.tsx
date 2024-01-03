@@ -33,7 +33,7 @@ export default function Page() {
                                         const id2 = uuid();
                                         return (
                                             <div key={id2} className="flex flex-col items-center">
-                                                <img className="w-14 h-14" src={`./icons/${lang.toLowerCase()}.png`}></img>
+                                                <img className="w-14 h-14" src={`./icons/${lang}.png`}></img>
                                                 <p className="text-[gray] font-medium mt-2">{lang}</p>
                                             </div>
                                         );
