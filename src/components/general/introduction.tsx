@@ -82,7 +82,8 @@ export default function Introduction() {
     return (
         <>
             <div ref={ref1} className="w-full h-screen flex items-center justify-center opacity-0">
-                <h1>Rockwell</h1>
+                <img src="./logo.svg" className="logo" />
+                <h1>ockwell</h1>
             </div>
 
             <div className=" h-[calc(100vh/2)]"></div>
